@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fábián Viktor - Borbély</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        :root {
+            --primary-color: #1a1a1d;
+            --secondary-color: #c3073f;
+            --accent-color: #6f2232;
+            --text-color: #ffffff;
+            --background-color: #4e4e50;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            color: var(--secondary-color);
+            font-size: 2.5rem;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--secondary-color);
+        }
+
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            margin-bottom: 2rem;
+            background-color: var(--primary-color);
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        #home p, #pricing ul, #contact p {
+            background-color: var(--background-color);
+            padding: 1rem;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            border-top: 2px solid var(--secondary-color);
+        }
+
+        .hairstyle {
+            background-color: var(--background-color);
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .hairstyle img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .hairstyle:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+
+        @media (min-width: 769px) {
+            main {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 1.5rem;
+            }
+
+            section {
+                flex: 1 1 calc(50% - 2rem);
+            }
+        }
+
+        @media (min-width: 1200px) {
+            main {
+                flex-direction: row;
+                gap: 2rem;
+            }
+
+            section {
+                flex: 1 1 calc(33.33% - 2rem);
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Fábián Viktor Borbély</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Kezdőlap</a></li>
+                <li><a href="#pricing">Árlista</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+                <li><a href="#hairstyles">Hajtípusok</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Kezdőlap</h2>
+            <p>Fábián Viktor vagyok, tapasztalt borbély, aki a legjobb szolgáltatást nyújta a haj- és szakállvágás terén. Munkámat precízió és szenvedély jellemzi. Kérem, fedezze fel az oldalamon kínált lehetőségeket!</p>
+        </section>
+
+        <section id="pricing">
+            <h2>Árlista</h2>
+            <ul>
+                <li>Szakáll: 4000 HUF</li>
+                <li>Haj: 5000 HUF</li>
+                <li>Haj + Szakáll: 8000 HUF</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Kapcsolat</h2>
+            <p>Email: fabianviktor@example.com</p>
+            <p>Telefon: +36 30 123 4567</p>
+            <p>Cím: 1011 Budapest, Széna tér 1.</p>
+        </section>
+
+        <section id="hairstyles">
+            <h2>Hajtípusok</h2>
+            <div class="hairstyle">
+                <img src="https://via.placeholder.com/300x200?text=Pompadour" alt="Pompadour">
+                <h3>Pompadour</h3>
+                <p>Elegáns és retro stílus, magasra emelt hajjal.</p>
+            </div>
+            <div class="hairstyle">
+                <img src="https://via.placeholder.com/300x200?text=Buzz+Cut" alt="Buzz Cut">
+                <h3>Buzz Cut</h3>
+                <p>Rövid és egyszerű fazon, amely könnyen karbantartható.</p>
+            </div>
+            <div class="hairstyle">
+                <img src="https://via.placeholder.com/300x200?text=Fade" alt="Fade">
+                <h3>Fade</h3>
+                <p>Lekerekített oldalak, modern és stílusos megjelenés.</p>
+            </div>
+            <div class="hairstyle">
+                <img src="https://via.placeholder.com/300x200?text=Quiff" alt="Quiff">
+                <h3>Quiff</h3>
+                <p>Feltűnő stílus, emelt frufruval.</p>
+            </div>
+            <div class="hairstyle">
+                <img src="https://via.placeholder.com/300x200?text=Slick+Back" alt="Slick Back">
+                <h3>Slick Back</h3>
+                <p>Hátrasimított haj, amely klasszikus megjelenést biztosít.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fábián Viktor Borbély. Minden jog fenntartva.</p>
+    </footer>
+</body>
+</html>
